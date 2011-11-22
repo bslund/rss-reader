@@ -1,3 +1,26 @@
 This project implements an RSS reader element for Polopoly. 
 
 It is packaged as a Polopoly plugin and written in Scala programming language.
+
+Installation:
+1. Go to the plugins folder of your project:
+     cd <polopoly-project.dir>/plugins
+2. Download the plugin:     
+     git clone git://github.com/bslund/rss-reader.git
+3. Add the artifact to the modules list of <polopoly-project.dir>/plugins/pom.xml:
+     <modules>
+       <module>rss-reader</module>
+       ..
+     <modules>
+4. Build:
+     mvn clean install
+5. Import content:
+     mvn p:import
+
+If everything went ok, the plugin appears in the plugins list in Polopoly GUI. 
+The RSS element can now be created in a content creator for elements.
+
+For more information about plugins, see 'Working with Plugins' in Polopoly Developers' Guide.
+
+
+
