@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+  <input-template name="com.polopoly.plugins.rssreader.RssReader" label="RSS Reader">
+    <policy>example.layout.element.ElementPolicy</policy>
+    <editor>com.polopoly.cm.app.widget.OTopPolicyWidget</editor>
+    <viewer>com.polopoly.cm.app.widget.OTopPolicyWidget</viewer>
+    <type>LayoutElement</type>
+    
+    <param name="ViewState_insert">false</param>
+    <param name="EditState_saveAndClose">true</param>
+    <param name="EditState_saveAndInsert">false</param>
+    <param name="EditState_saveAndFastInsert">false</param>
+    <param name="EditState_saveAndView">true</param>
+    <param name="EditNewState_saveAndClose">false</param>
+    <param name="EditNewState_saveAndInsert">false</param>
+    <param name="EditNewState_saveAndFastInsert">true</param>
+    <param name="EditNewState_saveAndView">false</param>
+    <param name="renderTemplateIconInSelect">true</param>
+    
+    <editor contextName="orchid_TOCENTRY">example.widget.OContentListEntryBasePolicyWidget</editor>
+    <viewer contextName="orchid_TOCENTRY">example.widget.OContentListEntryBasePolicyWidget</viewer>
+    
+    <field name="name" input-template="p.ContentName" label="Name" required="true" />
+    <field name="feedUrl" input-template="com.polopoly.plugins.rssreader.URLInput" label="URL" required="true">
+      <param name="default">http://blog.atex.com/cmlink/atex-blog-rss-1.1485?localLinksEnabled=false</param>
+      <param name="maxlength">255</param>
+    </field>
+    <field name="listLength" input-template="p.TextInput" label="Max list length">
+      <policy>com.polopoly.cm.app.policy.NumberInputPolicy</policy>
+      <param name="type">int</param>
+      <param name="default">20</param>
+      <param name="size">3</param>
+    </field>
+    <field name="openInNewWindow" input-template="p.Checkbox" label="Open in new window">
+      <param name="checked">true</param>
+    </field>
+
+    <output-templates mode="www">
+      <id>com.polopoly.plugins.rssreader.RssReader.ot</id>
+    </output-templates>
+  </input-template>
+</template-definition>

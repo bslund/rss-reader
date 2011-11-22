@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch xmlns="http://www.polopoly.com/polopoly/cm/xmlio">
+  <content>
+    <metadata>
+      <contentid>
+        <major>InputTemplate</major>
+        <externalid>com.polopoly.plugins.rssreader.RssReader</externalid>
+      </contentid>
+    </metadata>
+  </content>
+  <content>
+    <metadata>
+      <contentid>
+        <major>OutputTemplate</major>
+        <externalid>com.polopoly.plugins.rssreader.RssReader.ot</externalid>
+      </contentid>
+    </metadata>
+  </content>
+</batch>

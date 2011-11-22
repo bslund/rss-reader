@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+  <input-template name="com.polopoly.plugins.rssreader.URLInput">
+     <policy>com.polopoly.cm.app.policy.SingleValuePolicy</policy> 
+     <editor>com.polopoly.cm.app.widget.OTextInputPolicyWidget</editor> 
+     <viewer>com.polopoly.cm.app.widget.OTextOutputPolicyWidget</viewer> 
+  </input-template>
+</template-definition>
